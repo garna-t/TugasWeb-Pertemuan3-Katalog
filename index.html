@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garna Store</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#home">Garna Store</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu" aria-controls="navbarMenu"
+                    aria-expanded="false" aria-label="Buka menu navigasi">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produk">Produk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontak">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero-section">
+            <div class="container text-center">
+                <p class="hero-brand">Garna Store</p>
+                <h1 class="hero-title">Gaya Langkahmu, Dimulai di Sini</h1>
+                <p class="hero-desc">
+                    Temukan sepatu pilihan dengan desain modern dan kenyamanan
+                    maksimal untuk menemani setiap langkahmu.
+                </p>
+                <a href="#produk" class="btn btn-primary btn-lg hero-btn">Lihat Produk</a>
+            </div>
+        </section>
+
+        <section id="produk" class="product-section">
+            <div class="container">
+                <h2 class="section-title text-center">Produk Pilihan</h2>
+                <p class="section-subtitle text-center">Koleksi sepatu terbaik dari Garna Store</p>
+
+                <div class="row g-4 mt-2">
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card product-card h-100">
+                            <img src="img/produk1.jpg" class="product-img"
+                                 alt="Foto sepatu Garna Urban Runner warna biru putih"
+                                 onerror="this.onerror=null;this.src='img/placeholder.svg';">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="product-name">Hoka Runner</h3>
+                                <p class="product-desc">Sepatu lari harian dengan bantalan empuk dan desain warna yang ringan.</p>
+                                <p class="product-price">Rp 450.000</p>
+                                <button type="button" class="btn btn-outline-primary mt-auto"
+                                        data-bs-toggle="modal" data-bs-target="#modalProduk1">
+                                    Detail Produk
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card product-card h-100">
+                            <img src="img/produk2.jpg" class="product-img"
+                                 alt="Foto sepatu Garna Classic Low warna putih"
+                                 onerror="this.onerror=null;this.src='img/placeholder.svg';">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="product-name">Nike Air 270</h3>
+                                <p class="product-desc">Sepatu kasual yang cocok untuk gaya sehari-hari.</p>
+                                <p class="product-price">Rp 200.000</p>
+                                <button type="button" class="btn btn-outline-primary mt-auto"
+                                        data-bs-toggle="modal" data-bs-target="#modalProduk2">
+                                    Detail Produk
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card product-card h-100">
+                            <img src="img/produk3.jpg" class="product-img"
+                                 alt="Foto sepatu Garna Street Flex warna biru navy"
+                                 onerror="this.onerror=null;this.src='img/placeholder.svg';">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="product-name">Street Flex</h3>
+                                <p class="product-desc">Sneakers fleksibel dengan grip kuat, cocok untuk aktivitas luar ruangan.</p>
+                                <p class="product-price">Rp 200.000</p>
+                                <button type="button" class="btn btn-outline-primary mt-auto"
+                                        data-bs-toggle="modal" data-bs-target="#modalProduk3">
+                                    Detail Produk
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card product-card h-100">
+                            <img src="img/produk4.jpg" class="product-img"
+                                 alt="Foto sepatu Garna Active Pro warna biru putih"
+                                 onerror="this.onerror=null;this.src='img/placeholder.svg';">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="product-name">Do-win</h3>
+                                <p class="product-desc">Sepatu olahraga performa tinggi untuk menemani latihan yang intens.</p>
+                                <p class="product-price">Rp 250.000</p>
+                                <button type="button" class="btn btn-outline-primary mt-auto"
+                                        data-bs-toggle="modal" data-bs-target="#modalProduk4">
+                                    Detail Produk
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="contact-section">
+            <div class="container text-center">
+                <h2 class="section-title">Hubungi Kami</h2>
+                <p class="section-subtitle">Follow Instagram kami untuk update produk terbaru</p>
+                <a href="https://www.instagram.com/ganditrg_/" target="_blank" rel="noopener noreferrer"
+                   class="btn btn-primary btn-lg">
+                    Instagram @ganditrg_
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-section text-center">
+        <div class="container">
+            <p class="footer-brand">Garna Store</p>
+            <p class="footer-tagline">"Step into your style."</p>
+            <p class="footer-ig">Instagram: @ganditrg_</p>
+            <p class="footer-copy">&copy; 2026 Garna Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalProduk1" tabindex="-1" aria-labelledby="modalProduk1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProduk1Label">Garna Urban Runner</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/produk1.jpg" class="modal-img mb-3"
+                         alt="Foto sepatu Garna Urban Runner"
+                         onerror="this.onerror=null;this.src='img/placeholder.svg';">
+                    <p class="fw-bold">Rp 450.000</p>
+                    <p>Sepatu lari harian dengan bantalan empuk dan desain warna yang ringan, nyaman dipakai untuk sehari hari dan lari.</p>
+                    <ul class="modal-spec">
+                        <li><strong>Material:</strong> Mesh breathable + sol karet</li>
+                        <li><strong>Ukuran:</strong> 44</li>
+                        <li><strong>Warna:</strong> abu-abu orange</li>
+                        <li><strong>Jenis Penggunaan:</strong> Lari & aktivitas harian</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modalProduk2" tabindex="-1" aria-labelledby="modalProduk2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProduk2Label">Garna Classic Low</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/produk2.jpg" class="modal-img mb-3"
+                         alt="Foto sepatu Garna Classic Low"
+                         onerror="this.onerror=null;this.src='img/placeholder.svg';">
+                    <p class="fw-bold">Rp 200.000</p>
+                    <p>Sepatu kasual dengan tampilan simpel, cocok dipadukan dengan berbagai outfit.</p>
+                    <ul class="modal-spec">
+                        <li><strong>Material:</strong> Canvas + sol karet</li>
+                        <li><strong>Ukuran:</strong> 43</li>
+                        <li><strong>Warna:</strong> abu-abu gelap & putih</li>
+                        <li><strong>Jenis Penggunaan:</strong> Kasual & jalan-jalan</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProduk3" tabindex="-1" aria-labelledby="modalProduk3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProduk3Label">Garna Street Flex</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/produk3.jpg" class="modal-img mb-3"
+                         alt="Foto sepatu Garna Street Flex"
+                         onerror="this.onerror=null;this.src='img/placeholder.svg';">
+                    <p class="fw-bold">Rp 200.000</p>
+                    <p>Sneakers fleksibel dengan grip kuat, dirancang untuk aktivitas luar ruangan yang aktif.</p>
+                    <ul class="modal-spec">
+                        <li><strong>Material:</strong> Synthetic leather + sol anti-slip</li>
+                        <li><strong>Ukuran:</strong> 38 </li>
+                        <li><strong>Warna:</strong> Putih abu-abu</li>
+                        <li><strong>Jenis Penggunaan:</strong> Outdoor & street style</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProduk4" tabindex="-1" aria-labelledby="modalProduk4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProduk4Label">Garna Active Pro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/produk4.jpg" class="modal-img mb-3"
+                         alt="Foto sepatu Garna Active Pro"
+                         onerror="this.onerror=null;this.src='img/placeholder.svg';">
+                    <p class="fw-bold">Rp 250.000</p>
+                    <p>Sepatu olahraga performa tinggi dengan bantalan responsif untuk menemani latihan intens.</p>
+                    <ul class="modal-spec">
+                        <li><strong>Material:</strong> Knit fabric + sol EVA</li>
+                        <li><strong>Ukuran:</strong> 43</li>
+                        <li><strong>Warna:</strong> Biru - Putih</li>
+                        <li><strong>Jenis Penggunaan:</strong> Olahraga & gym</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
