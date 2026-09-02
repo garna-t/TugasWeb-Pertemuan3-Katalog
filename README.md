@@ -97,4 +97,4 @@ Ukuran layar: **768 px**
 
 Ukuran layar: **1440 px**
 
-![Testing Desktop](img/testing-desktop.png)
+![Testing Desktop](img/testing-dekstop.png)
